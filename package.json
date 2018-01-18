@@ -1,0 +1,34 @@
+{
+  "name": "the_asia",
+  "version": "1.0.0",
+  "description": "Tours, day trips, sightseeing, tickets, activities |The Asia",
+  "main": "index.js",
+  "repository": "git@github.com:isheedo/theasia.git",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "author": "Ivan Sumlikin",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.1.18",
+    "css-loader": "^0.23.1",
+    "lodash": "^3.10.1",
+    "node-sass": "^3.4.2",
+    "react": "^0.14.9",
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^0.14.3",
+    "react-router": "^2.0.1",
+    "sass-loader": "^3.1.2",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.13.0",
+    "webfontloader": "^1.6.28"
+  }
+}
