@@ -1,0 +1,9 @@
+@import '../../style/base/variables';
+
+#appLoader {
+  display: block;
+  padding: 3rem;
+  margin: 8rem auto;
+  border: 2px solid $success-color-base;
+  border-radius: 50%;
+}

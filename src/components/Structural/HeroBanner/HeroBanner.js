@@ -2,6 +2,7 @@ import React from 'react';
 import { Image, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import FontAwesome from 'react-fontawesome';
+import Loader from '../../HOC/Loader';
 import './style.scss';
 
 const HeroBanner = ({imgUrl}) => {
@@ -44,4 +45,4 @@ HeroBanner.PropTypes = {
   imgUrl: PropTypes.string.isRequired,
 };
 
-export default HeroBanner
+export default Loader('imgUrl')(HeroBanner)

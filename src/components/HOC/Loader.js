@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
+import './style.scss';
 
 
 const Loader = (propToCheck) => (WrappedComponent) => {
@@ -10,7 +11,9 @@ const Loader = (propToCheck) => (WrappedComponent) => {
         prop === undefined ||
         (prop.constructor === Object && Object.keys(prop).length === 0)
       );
-      return isEmpty(this.props[propToCheck]) ? <img src='../../images/load_asia.gif' /> : <WrappedComponent {...this.props} />;
+      return isEmpty(this.props[propToCheck]) ? 
+        <img id='appLoader' src='../../images/load_asia.gif' /> :
+         <WrappedComponent {...this.props} />;
     }
   }
 }
