@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../components/Structural/Header/Header';
 import Footer from '../components/Structural/Footer/Footer';
 import PageContent from '../components/Containers/PageContent/PageContent';
+import HeroBanner from './Structural/HeroBanner/HeroBanner';
 import axios from 'axios';
 import FontAwesome from 'react-fontawesome';
 
@@ -10,7 +11,8 @@ export default class App extends Component {
     super(props),
     this.state = {
       tourData: {},
-    }
+    },
+    this.renderHero = this.renderHero.bind(this);
   }
   
   componentDidMount() {
@@ -21,6 +23,15 @@ export default class App extends Component {
       }))
       .catch(err => console.log(err));
   }
+
+  renderHero() {
+    const { tourData: { product_medias } } = this.state;
+    if (product_medias) {
+      const heroImg = product_medias.find(media => media.is_thumbnail );
+      
+      return <HeroBanner imgUrl={heroImg.details.absolute_url} />
+    }
+  }
   
 
   render() {
@@ -28,6 +39,7 @@ export default class App extends Component {
     return (
       <div>
         <Header />
+        {this.renderHero()}
         <PageContent content={tourData}/>
         <Footer />
       </div>
