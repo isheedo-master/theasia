@@ -1,6 +1,6 @@
 :root,
 html{
-  font-size: $font-size-base ;
+  font-size: 10px;
   font-family: $font-family-base;
   font-weight: $font-weight-base;
   color: $font-color-base;
@@ -9,5 +9,13 @@ html{
 body {
   font-size: 1.4rem;
   text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
   background-color: $white-color-base;
+}
+
+hr {
+  margin: {
+    top: 2rem;
+    bottom: 2rem;
+  }
 }
