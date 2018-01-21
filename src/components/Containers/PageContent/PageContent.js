@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Loader from '../../HOC/Loader';
 import { Grid, Row, Col, Panel, Table, Image } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
@@ -283,11 +284,11 @@ renderImages() {
             {this.renderSchedule()}
             {this.renderImages()}
           </Col>
-          <Col>
-            <Panel>
+          <Col xs={12} md={4} className='well'>
+            <Panel className='well'>
               <Panel.Heading>
                 <Panel.Title>
-                  Title that functions as a collapse toggle
+                  A Booking form goes here
 						    </Panel.Title>
               </Panel.Heading>
             </Panel>
@@ -297,5 +298,15 @@ renderImages() {
     )
   }
 }
+
+PageContent.defaultProps = {
+  content: [
+    name: 'Some name'
+  ],
+};
+
+PageContent.PropTypes = {
+  content: PropTypes.array.isRequired,
+};
 
 export default Loader('content')(PageContent)

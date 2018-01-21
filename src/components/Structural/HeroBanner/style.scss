@@ -1,0 +1,58 @@
+@import '../../../style/base/variables';
+@import '../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+
+#heroBanner {
+  position: relative;
+  margin-top: 8rem;
+  height: 50rem;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: $screen-xs) {
+    height: 30rem;
+  }
+  .hero-banner-actions {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    button {
+      color: $white-color-base;
+      width: 140px;
+      cursor: pointer;
+      padding: 8px 12px;
+      font-size: 16px;
+      transition: all .1s;
+      border-radius: 8px;
+      text-transform: none;
+      font-weight: 600;
+      display: block;
+      text-align: center;
+      background: rgba($color: $black-color-base, $alpha: 0.5);
+      border: 0;
+      &:hover {
+        background: rgba($color: $black-color-base, $alpha: 1);
+      }
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      li {
+        display: inline-block;
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: 0 3px 2.5rem;
+        text-align: center;
+        line-height: 4rem;
+        font-size: 1.8rem;
+        border-radius: 50%;
+        border: 1px solid $white-color-base;
+        &:hover {
+          background-color: $success-color-base;
+        }
+        a {
+          color: $white-color-base;
+        }
+      }
+    }
+  }
+}
