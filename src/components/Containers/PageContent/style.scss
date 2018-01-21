@@ -1,0 +1,14 @@
+#appContent {
+  margin-top: 8rem;
+  padding-bottom: 4rem;
+  .tour-media-wrapper {
+    padding: 1px;
+    .tour-media {
+      max-height: 14.5rem;
+      height: 14.5rem;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

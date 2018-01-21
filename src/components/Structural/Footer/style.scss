@@ -1,0 +1,44 @@
+@import '../../../style/base/variables';
+
+#appFooter {
+  padding: {
+    top: 2.5rem;
+    bottom: 2.5rem;
+  }
+  text-align: center;
+  background: $grey-dark-color;
+  color: $white-color-base;
+  a {
+    color: $white-color-base;
+    position: relative;
+    transition: 0.2s linear;
+    &:hover {
+      text-decoration: none;
+      color: darken($color: $white-color-base, $amount: 15%);
+    }
+    &.social-link {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      vertical-align: middle;
+      border-radius: 50%;
+      border: 1px solid $white-color-base;
+      line-height: 3.4rem;
+      font-size: 1.6rem;
+      margin: 1rem 3px 0;
+      &:hover {
+        background-color: $white-color-base;
+        color: $grey-dark-color;
+      }
+
+    }
+    &:not(:last-child):not(.social-link)::after {
+      content: '\00B7';
+      margin: 0 0.5rem
+    }
+  }
+  hr {
+    margin-bottom: 0.5rem;  
+    border-top: 1px solid #fff3;
+  }
+}

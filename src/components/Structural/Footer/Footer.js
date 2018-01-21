@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
+import styles from './style.scss';
 
 const Footer = () => {
   const footerLinks = [
@@ -20,7 +21,7 @@ const Footer = () => {
     'linkedin'
   ]
   return (
-    <footer>
+    <footer id='appFooter'>
       <Grid>
         <Row>
           <Col>
@@ -34,7 +35,9 @@ const Footer = () => {
           <h3>Follow Us On</h3>
           <Col>
             {socialLinks.map(link => (
-              <a key={link} href='#'>
+              <a key={link} href='#'
+                className='social-link'
+              >
                 <FontAwesome name={link} />
               </a>
             ))}

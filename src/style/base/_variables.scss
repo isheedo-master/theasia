@@ -13,10 +13,28 @@ $info-color-base: #55acee;
 
 // Alternate Colors
 $grey-light-color: #F2F5F6;
+$grey-dark-color: #333;
 
 // Font settings
-$font-size-base: 10;
+$font-size-base: 1;
 $font-weight-base: 400;
 $font-weight-bold: 700;
 $font-family-base: 'Open Sans', sans-serif;
 $line-height-base: 24px;
+
+// Bootstrap vars update
+  // ** General
+$hr-border: #ddd;
+
+  // ** Navbar
+$navbar-height: 46px;
+$navbar-default-link-color: $black-color-base!default;
+$navbar-border-radius: 0;
+$navbar-default-bg: $white-color-base;
+
+// ** Input
+$input-bg: $grey-light-color;
+$input-color: $black-color-base;
+
+// ** Typo
+$font-size-h1: 24px;

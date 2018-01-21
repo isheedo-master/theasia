@@ -1,3 +1,5 @@
+@import './base/variables';
+
 //Bootstrap core
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
@@ -21,7 +23,6 @@
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
 
 //Reset && Variables && Base
-@import './base/variables';
 @import './base/scaffolding';
 
 

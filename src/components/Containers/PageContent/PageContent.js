@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import Loader from '../../HOC/Loader';
 import { Grid, Row, Col, Panel, Table, Image } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
-import { sortBy } from 'lodash';
+import { sortBy, sample } from 'lodash';
+import './style.scss';
 
 const fallbackEmptyLink = function(e){
   e.preventDefault();
-  alert(`Sorry we can't take you to "${e.target.text}" yet`);
+  alert(`${_.sample(['Uh-oh', 'Ouch', 'Oopsy'])}, sorry we can't take you here yet`);
 }
 
 class PageContent extends Component {
@@ -249,12 +250,16 @@ renderImages() {
 
   return (
     <Row>
-      {product_medias.slice(0, 5).map(media => {
+      {product_medias.slice(0, 6).map(media => {
         return (
           <Col key={`${media.product_id}-${media.media_id}`}
             xs={6} lg={4}
+            className='tour-media-wrapper'
           > 
-            <Image src={media.details.absolute_url} responsive />
+            <Image
+              src={media.details.absolute_url} responsive
+              className='tour-media'
+            />
           </Col>
         );
       })}
@@ -266,7 +271,7 @@ renderImages() {
 
   render () {
     return (
-      <Grid componentClass='section'>
+      <Grid id='appContent' componentClass='section'>
         <Row>
           <Col xs={12} md={8}>
             {this.renderNameAndInfo()}
