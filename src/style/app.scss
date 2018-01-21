@@ -1,11 +1,27 @@
+//Bootstrap core
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar';
+
+
+// BS Utility classes
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+
 //Reset && Variables && Base
-@import "./base/reset";
-@import "./base/variables";
-@import "./base/scaffolding";
-
-//Components
-// @import "./base/components/buttons";
-
-
+@import './base/variables';
+@import './base/scaffolding';
 
 
